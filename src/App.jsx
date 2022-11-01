@@ -26,7 +26,7 @@ function App() {
       theme: "dark",
       });
 
-
+  //Array de tarefas
   const [task, setTask] = useState("");
   const [listTasks, setListTasks] = useState([{
     id: 1,
@@ -76,16 +76,15 @@ function App() {
     setListTasks([... newList])
   };
   
-  const [theme, setTheme] = useState(false);
-
+  
   //Alterando o tema
+  const [theme, setTheme] = useState(false);
   const toggleTheme = (theme) => {
    if(theme === true){
     setTheme(false);
    } else{
     setTheme(true);
    }
-   console.log(theme)
   }
 
 

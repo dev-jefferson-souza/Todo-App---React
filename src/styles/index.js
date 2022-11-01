@@ -165,6 +165,7 @@ export const Item = styled.li`
     padding: 0.875rem 0.875rem 0.5rem 1.5rem;
     min-width: 320px;
     min-height: 50px;
+    max-width: 768px;
 
     /* background-color:  ${(props) => props.checked ? "var(--cor-primaria)" : "var(--cor-secundaria)"}; */
     background-color: ${(props) => {
