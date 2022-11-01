@@ -1,5 +1,5 @@
 # Todo-App---React
-:construction: <h5> Projeto em construção </h5> :construction:
+<h4>:construction: Projeto em construção:construction:</h4>
 <br><strong>Objetivo:</strong> Construir um app onde o usuário possa criar, excluir e marcar uma tarefa como pronta.
 
 :hammer: Funcionalidades do projeto:
