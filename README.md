@@ -7,4 +7,4 @@
 <br>`Deletar`: possibilita a exclusão da tarefa.
 <br>`Check`: altera o estado da tarefa entre concluída e pendente.
 
-📁 <strong>Acesso ao projeto:</strong> Você pode rodar a aplicação por meio desse link: https://effulgent-seahorse-b63486.netlify.app/ **
+📁 <h4>Acesso ao projeto:</h4> Você pode rodar a aplicação por meio desse link: https://effulgent-seahorse-b63486.netlify.app/ **
