@@ -61,42 +61,44 @@ function App() {
     setListTasks([... newList])
   };
   
-  // const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(false);
 
-  // //Alterando o tema
-  // const toggleTheme = (theme) => {
-  //  if(theme === true){
-  //   setTheme(false);
-  //  } else{
-  //   setTheme(true);
-  //  }
-  // }
+  //Alterando o tema
+  const toggleTheme = (theme) => {
+   if(theme === true){
+    setTheme(false);
+   } else{
+    setTheme(true);
+   }
+   console.log(theme)
+  }
 
 
   return (
-    <Container>
+    <Container theme={theme}>
       <h1 className="title">TODO APP</h1>
       <Spacer />
 
       <Flex direction="row">
         <Input value={task}
+        theme={theme} 
         placeholder="Digite sua tarefa"
         onChange={(e) => setTask(e.target.value)}/>
-        <Button onClick={addTask}>Adicionar</Button>
+        <Button theme={theme} onClick={addTask}>Adicionar</Button>
       </Flex>
       <Spacer margin="1rem"/>
 
       <ul>
         {listTasks.map((task) => (
           <>
-            <Item checked={task.checked} key={task.id}>
-              <p>{task.task}</p>
+            <Item theme={theme} checked={task.checked} key={task.id}>
+              <p theme={theme}>{task.task}</p>
               <Flex direction="row">
-                <button>
-                  <i onClick={() => toggleChecked(task.id, task.checked)} class='bx bx-check'></i>
+                <button theme={theme}>
+                  <i theme={theme} onClick={() => toggleChecked(task.id, task.checked)} class='bx bx-check'></i>
                 </button>
-                <button onClick={() => removeTask(task.id)}>
-                  <i class='bx bxs-trash'></i>
+                <button theme={theme} onClick={() => removeTask(task.id)}>
+                  <i theme={theme} class='bx bxs-trash'></i>
                 </button>
               </Flex>
             </Item>
@@ -104,6 +106,14 @@ function App() {
           </>
         ))}
       </ul>
+      <Spacer margin="1rem" padding="1.75rem"/>
+      <div id="sombra">
+        <button theme={theme} id="change-button">
+        <i onClick={() => toggleTheme(theme)} class='bx bxs-sun'></i>
+        <i onClick={() => toggleTheme(theme)} class='bx bxs-moon bx-flip-horizontal' ></i>
+        </button>
+      </div>
+
       <ToastContainer/>
       
     </Container>
