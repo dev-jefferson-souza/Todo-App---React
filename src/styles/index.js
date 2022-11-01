@@ -10,18 +10,20 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         
         --cor-sombra: rgba(0,0,0, 0.25);
-
+        
         //Variáveis de cores - LIGTH MODE
-        --cor-primaria: #BB86FC;
-        --cor-background: rgb(249,249,249);
+        /* --cor-primaria: #BB86FC;
+        --cor-background: rgb(245,245,245);
         --cor-secundaria: #fff;
         --cor-complementar-1: #000000;
+        --cor-complementar-2: rgb(96, 57, 145) */
         
         //Variáveis de cores - DARK MODE
-        --cor-primaria: #BB86FC;
-        --cor-background: hsl(0,0%,20.0%);
-        --cor-secundaria: hsl(0,0%,23.0%);
+        --cor-primaria: rgb(149, 75, 242);
+        --cor-background: hsl(0,0%,8.0%);
+        --cor-secundaria: hsl(0,0%,16.0%);
         --cor-complementar-1: #e5e5e5;
+        --cor-complementar-2: rgb(132, 35, 252);
 }
 `;
 
@@ -42,12 +44,13 @@ export const Container = styled.div`
         font-size: 2.75rem;
         line-height: 4.5rem;
         color: var(--cor-primaria);
+        filter: drop-shadow(2px 2px 4px var(--cor-complementar-2));
     }
 `;
 
 export const Input = styled.input`
     padding:  0.5rem 1.5rem;
-    width: 190px;
+    width: 195px;
     height: 50px;
 
     background-color: var(--cor-secundaria);
@@ -93,7 +96,8 @@ export const Button = styled.button`
     cursor: pointer;
 
     &:active, :hover, :focus{
-            opacity: 0.8;
+            opacity: 0.7;
+            box-shadow: 0px 0px 12px 5px var(--cor-complementar-2);
         }
 
     //Interior Button
@@ -139,7 +143,7 @@ export const Item = styled.li`
         cursor: pointer;
         
         &:active, :hover, :focus{
-            opacity: 0.6;
+            opacity: 0.5;
         }
 
     
