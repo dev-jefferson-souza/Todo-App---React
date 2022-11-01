@@ -6,6 +6,7 @@
 <br>`Adicionar tarefa`: permite que o usuário crie uma tarefa.
 <br>`Deletar`: possibilita a exclusão da tarefa.
 <br>`Check`: altera o estado da tarefa entre concluída e pendente.
+<br>`DarkMode`: possibilidade de alternar entre o tema claro e escuro.
 
 <strong>📁 Acesso ao projeto:</strong>
 <br>Você pode rodar a aplicação por meio desse link: https://effulgent-seahorse-b63486.netlify.app/
