@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useState} from "react";
 
 function App() {
-  const notify = () => toast('🦄 Adicione uma tarefa!', {
+  const notify = () => toast('🦄 Por favor, adicione uma tarefa!', {
     position: "top-center",
     autoClose: 5000,
     hideProgressBar: false,
@@ -14,6 +14,17 @@ function App() {
     progress: undefined,
     theme: "light",
     });
+
+    const notifyDark = () => toast('🦄 Por favor, adicione uma tarefa!', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
 
 
   const [task, setTask] = useState("");
@@ -33,7 +44,11 @@ function App() {
   //Adicionando a tarefa e limpando o campo de texto
   const addTask = () => {
     if(!task){
-      return  notify();
+      if(theme == true){
+        return  notify();
+      } else{
+        return notifyDark();
+      }
     };
 
     const newTask = {

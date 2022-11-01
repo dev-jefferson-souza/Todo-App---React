@@ -44,7 +44,7 @@ export const Container = styled.div`
     .title{
         font-family: 'Poiret One', cursive;
         font-size: 2.75rem;
-        line-height: 4.5rem;
+        line-height: 6rem;
         color: ${(props) => props.theme == true ? "var(--cor-primaria)" : "var(--cor-primaria-dark)"};
         filter: drop-shadow(2px 2px 4px ${(props) => props.theme == true ? "none" : "var(--cor-complementar-2-dark)"});
     }
