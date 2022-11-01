@@ -1,6 +1,6 @@
 # Todo-App---React
 :construction: Projeto em construção :construction:
-Objetivo: Construir um app onde o usuário possa criar, excluir e marcar uma tarefa como pronta.
+<br><strong>Objetivo:</strong> Construir um app onde o usuário possa criar, excluir e marcar uma tarefa como pronta.
 
 :hammer: Funcionalidades do projeto:
 <br>`Adicionar tarefa`: permite que o usuário crie uma tarefa.
