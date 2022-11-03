@@ -38,8 +38,6 @@ function App() {
     checked: false
   }
   ]);
-
-  
   
   //Adicionando a tarefa e limpando o campo de texto
   const addTask = () => {
@@ -123,8 +121,8 @@ function App() {
       <Spacer margin="1rem" padding="1.75rem"/>
       <div id="sombra">
         <button theme={theme} id="change-button">
-        <i onClick={() => toggleTheme(theme)} class='bx bxs-sun'></i>
-        <i onClick={() => toggleTheme(theme)} class='bx bxs-moon bx-flip-horizontal' ></i>
+          <i onClick={() => toggleTheme(theme)} class='bx bxs-sun'></i>
+          <i onClick={() => toggleTheme(theme)} class='bx bxs-moon bx-flip-horizontal' ></i>
         </button>
       </div>
 

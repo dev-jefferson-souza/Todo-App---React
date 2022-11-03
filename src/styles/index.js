@@ -180,6 +180,7 @@ export const Item = styled.li`
         }
 
     }};
+
     box-shadow: 0px 4px 4px var(--cor-sombra);
     border-radius: 6px;
     list-style: none;
@@ -187,12 +188,14 @@ export const Item = styled.li`
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s;
 
     //Interior da Lista
     p{
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5rem;
+        transition: 0.3s;
         text-decoration-line: ${(props) => props.checked  ? "line-through" : "none"};
         color: ${(props) => {
         if(props.theme != true && props.checked == false){
@@ -228,6 +231,7 @@ export const Item = styled.li`
     }
 
     i{
+        transition: 0.3s;
         font-size: 1.25rem;
         color: ${(props) => {
         if(props.theme != true && props.checked == false){
